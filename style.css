@@ -15,19 +15,18 @@ button{
 .calculator{
     padding: 0;
     margin: 0 auto;
-    width: 200px;
+    width: 475px;
     height: 325px;
     border: none;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 24px;
     font-weight: 300;
     color: black;
-    
 }
 #display{
     line-height: 75px;
     padding: 0 15px 0 15px;
-    width: 168px;
+    width: 378px;
     height: 75px;
     border: 1px solid gray;
     background-color: #979797;
@@ -35,21 +34,16 @@ button{
     color: white;
     font-size: 48px;
     text-align: right;
-   
 }
 .button_long{
     width:100px;
     padding:0 0 0 20px;
     text-align:left;
-    border-radius:  0 0 0 15px;
-
-    
 }
 .ops,
 .eval {
  background-color: #ef8d30;
  color: white
- 
 }
 .num,
 #dot {
@@ -72,6 +66,7 @@ button:focus {
 .bottom_left {
  border-radius: 0 0 0 15px;
 }
-.eval{
-    border-radius: 0 0 15px 0;
+.new{
+    width:70px;
+    font-size:15px;
 }

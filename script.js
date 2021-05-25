@@ -56,12 +56,41 @@ function percent() {
     current = current / 100;
     document.getElementById("display").innerHTML = current;
 }
-
+function x2() {
+    current = current * current;
+    document.getElementById("display").innerHTML = current;
+}
+function xx() {
+    current = Math.pow(2, current);
+    document.getElementById("display").innerHTML = current;
+}
+function x10() {
+    current = Math.pow(10, current);
+    document.getElementById("display").innerHTML = current;
+}
+function x1() {
+    current = 1 / current;
+    document.getElementById("display").innerHTML = current;
+}
+function xroot2() {
+    current = Math.sqrt(current);
+    document.getElementById("display").innerHTML = current;
+}
+function baselog() {
+    current = Math.log(current);
+    document.getElementById("display").innerHTML = current;
+}
 document.getElementById("clear").addEventListener("click", clearDisp);
 document.getElementById("dot").addEventListener("click", addDot);
 document.getElementById("eval").addEventListener("click", calculate);
 document.getElementById("toggle").addEventListener("click", toggle);
 document.getElementById("percent").addEventListener("click", percent);
+document.getElementById("x2").addEventListener("click", x2);
+document.getElementById("2x").addEventListener("click", xx);
+document.getElementById("10x").addEventListener("click", x10);
+document.getElementById("1/x").addEventListener("click", x1);
+document.getElementById("2√x").addEventListener("click", xroot2);
+document.getElementById("lnx").addEventListener("click", baselog);
 let all_num = document.getElementsByClassName("num")
 for (let i = 0; i < all_num.length; i++) {
     all_num[i].addEventListener("click", function () { addDigit(this); });
