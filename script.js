@@ -48,10 +48,20 @@ function calculate() {
     document.getElementById("display").innerHTML = current;
     stored = current;
 }
+function toggle() {
+    current = -1 * current;
+    document.getElementById("display").innerHTML = current;
+}
+function percent() {
+    current = current / 100;
+    document.getElementById("display").innerHTML = current;
+}
 
 document.getElementById("clear").addEventListener("click", clearDisp);
 document.getElementById("dot").addEventListener("click", addDot);
 document.getElementById("eval").addEventListener("click", calculate);
+document.getElementById("toggle").addEventListener("click", toggle);
+document.getElementById("percent").addEventListener("click", percent);
 let all_num = document.getElementsByClassName("num")
 for (let i = 0; i < all_num.length; i++) {
     all_num[i].addEventListener("click", function () { addDigit(this); });
